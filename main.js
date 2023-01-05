@@ -49,9 +49,10 @@ const validateCred = arr => {
 }
 
 const findInvalidCards = arr => {
-  
+ arr.filter(elem => {
+    return validateCred(elem)
+ }) 
 }
-console.log(validateCred([4,5,3,9,6,8,9,8,8,7,7,0,5,7,9,8]))
 
 
 
